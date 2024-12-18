@@ -1,0 +1,35 @@
+{
+  "name": "bitmovin-tv",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "EXPO_TV=1 expo start",
+    "android": "EXPO_TV=1 expo run:android",
+    "ios": "EXPO_TV=1 expo run:ios",
+    "web": "expo start --web",
+    "prebuild": "EXPO_TV=1 expo prebuild --clean"
+  },
+  "dependencies": {
+    "expo": "^51.0.36",
+    "expo-splash-screen": "~0.27.6",
+    "expo-status-bar": "~1.12.1",
+    "expo-build-properties": "~0.12.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "npm:react-native-tvos@0.74.5-0",
+    "bitmovin-player-react-native": "^0.35.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@react-native-tvos/config-tv": "^0.0.10",
+    "@types/react": "~18.3.12",
+    "typescript": "~5.3.3"
+  },
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native"
+      ]
+    }
+  },
+  "private": true
+}
